@@ -1,12 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form: feedback</title>
 </head>
-<body>
-
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img src="./img/logo.svg" width="185" height="96" alt="Логотип Sedona">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a href="index.html">
+              ГЛАВНАЯ
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">
+              ФОТО И ВИДЕО
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">
+              ФОРМА ОТЗЫВА
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <img src="./img/SEDONA.svg" width="229" height="39" alt="Надпись Седона">
+    <section class="slogan">
+      <div class="slogan__wrapper">
+        <h2 class="slogan__title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
+        <p class="slogan__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+      </div>
+    </section>
+    <section class="enter-name">
+      <div class="enter-name__wrapper">
+        <h2 class="enter-name__title">ПРЕДСТАВЬТЕСЬ:</h2>
+        <form class="enter-name__form form">
+          <label>
+            ИМЯ*:
+            <input type="text" placeholder="Пётр">
+          </label>
+          <label>
+            ФАМИЛИЯ*:
+            <input type="text" placeholder="Пустота">
+          </label>
+          <label>
+            ОТЧЕСТВО:
+            <input type="text" placeholder="Викторович">
+          </label>
+        </form>
+      </div>
+    </section>
+    <section class="contact-info">
+      <div class="contact-info__wrapper">
+        <h2 class="contact-info__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
+        <form class="contact-info__form form">
+          <label>
+            КОНТАКТНЫЙ ТЕЛЕФОН*:
+            <input type="number" placeholder="Введите телефон">
+          </label>
+          <label>
+            ЭЛЕКТРОННАЯ ПОЧТА*:
+            <input type="email" placeholder="Введите e-mail">
+          </label>
+        </form>
+      </div>
+    </section>
+    <section class="impression">
+      <div class="impression__wrapper">
+        <h2 class="impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
+        <form class="impression__form form">
+          <label>
+            <input type="radio" checked>
+            Скорее положительное
+          </label>
+          <label>
+            <input type="radio">
+            Скорее отрицательное
+          </label>
+          <label>
+            <input type="radio">
+            Затрудняюсь ответить
+          </label>
+        </form>
+      </div>
+    </section>
+    <section class="visited-attractions">
+      <div class="visited-attractions__wrapper">
+        <h2 class="visited-attractions__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
+        <form class="visited-attractions__form form">
+          <label>
+            <input type="checkbox" checked>
+            Мост Дьявола
+          </label>
+          <label>
+            <input type="checkbox" checked>
+            Гора-Колокол
+          </label>
+          <label>
+            <input type="checkbox" checked>
+            Слайд-парк
+          </label>
+          <label>
+            <input type="checkbox">
+            Красные скалы
+          </label>
+        </form>
+      </div>
+    </section>
+    <section class="description-emotions">
+      <div class="description-emotions__wrapper">
+        <h2 class="description-emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
+        <form class="description-emotions__form form">
+          <label>
+            <textarea placeholder="Опишите подробно все свои восторги "></textarea>
+          </label>
+        </form>
+        <a class="impression__button button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+        <p class="button__addition">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__hashtag hashtag">
+        <p class="main-footer__hashtag-text">#VISITSEDONA</p>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacaemy"></a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
