@@ -1,5 +1,6 @@
 .reasons__title {
   .title-h2();
+  margin: 32px 0 35px 0;
 
   &--light {
     color: #ffffff;
@@ -8,6 +9,7 @@
 
 .reasons__text {
   .text();
+  margin-bottom: 32px;
 
   &--light {
     color: #ffffff;
@@ -17,11 +19,26 @@
 .reasons__panel {
   background-color: @main-color;
   padding: 33px 18px 40px 18px;
+  margin: 0 -20px;
+  width: 320px;
+  box-sizing: border-box;
 }
 
 .reasons__list {
   &--gray {
     background-color: #eeeeee;
+    padding: 24px 18px 28px 18px;
+    margin: 0 -20px;
+    width: 320px;
+    box-sizing: border-box;
   }
 }
 
+.reasons__image {
+  margin: 0 -20px;
+}
+
+.reasons__row {
+  display: flex;
+  flex-direction: column;
+}
