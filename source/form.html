@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form: feedback</title>
-  <link href="./css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -13,9 +12,7 @@
       <img src="./img/logo.svg" width="185" height="96" alt="Логотип Sedona">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+      <button class="main-nav__toggle" type="button"></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
@@ -50,86 +47,80 @@
         <p class="slogan__text">ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
       </div>
     </section>
-    <form class="main-container__form form">
-      <section class="enter-name">
-        <div class="enter-name__wrapper">
-          <h2 class="enter-name__title">ПРЕДСТАВЬТЕСЬ:</h2>
-            <label>
-              ИМЯ*:
-              <input type="text" placeholder="Пётр">
-            </label>
-            <label>
-              ФАМИЛИЯ*:
-              <input type="text" placeholder="Пустота">
-            </label>
-            <label>
-              ОТЧЕСТВО:
-              <input type="text" placeholder="Викторович">
-            </label>
-        </div>
-      </section>
-      <section class="contact-info">
-        <div class="contact-info__wrapper">
-          <h2 class="contact-info__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</h2>
-            <label>
-              КОНТАКТНЫЙ ТЕЛЕФОН*:
-              <input type="number" placeholder="Введите телефон">
-            </label>
-            <label>
-              ЭЛЕКТРОННАЯ ПОЧТА*:
-              <input type="email" placeholder="Введите e-mail">
-            </label>
-        </div>
-      </section>
-      <section class="impression">
-        <div class="impression__wrapper">
-          <h2 class="impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</h2>
-            <label>
-              <input type="radio" checked>
-              Скорее положительное
-            </label>
-            <label>
-              <input type="radio">
-              Скорее отрицательное
-            </label>
-            <label>
-              <input type="radio">
-              Затрудняюсь ответить
-            </label>
-        </div>
-      </section>
-      <section class="visited-attractions">
-        <div class="visited-attractions__wrapper">
-          <h2 class="visited-attractions__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</h2>
-            <label>
-              <input type="checkbox" checked>
-              Мост Дьявола
-            </label>
-            <label>
-              <input type="checkbox" checked>
-              Гора-Колокол
-            </label>
-            <label>
-              <input type="checkbox" checked>
-              Слайд-парк
-            </label>
-            <label>
-              <input type="checkbox">
-              Красные скалы
-            </label>
-        </div>
-      </section>
-      <section class="description-emotions">
-        <div class="description-emotions__wrapper">
-          <h2 class="description-emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</h2>
+    <section class="form">
+      <form class="form__feedback feedback">
+        <fieldset class="feedback__enter-name enter-name">
+          <legend class="enter-name__title">ПРЕДСТАВЬТЕСЬ:</legend>
+          <label>
+            ИМЯ*:
+            <input type="text" placeholder="Пётр">
+          </label>
+          <label>
+            ФАМИЛИЯ*:
+            <input type="text" placeholder="Пустота">
+          </label>
+          <label>
+            ОТЧЕСТВО:
+            <input type="text" placeholder="Викторович">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__contact-info contact-info">
+          <legend class="contact-info__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+          <label>
+            КОНТАКТНЫЙ ТЕЛЕФОН*:
+            <input type="number" placeholder="Введите телефон">
+          </label>
+          <label>
+            ЭЛЕКТРОННАЯ ПОЧТА*:
+            <input type="email" placeholder="Введите e-mail">
+          </label>
+        </fieldset>
+        <fieldset class="feedback__impression impression">
+          <legend class="impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+          <label>
+            <input type="radio" checked>
+            Скорее положительное
+          </label>
+          <label>
+            <input type="radio">
+            Скорее отрицательное
+          </label>
+          <label>
+            <input type="radio">
+            Затрудняюсь ответить
+          </label>
+        </fieldset>
+        <fieldset class="feedback__visited-attractions visited-attractions">
+          <legend class="visited-attractions__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+          <label>
+            <input type="checkbox" checked>
+            Мост Дьявола
+          </label>
+          <label>
+            <input type="checkbox" checked>
+            Гора-Колокол
+          </label>
+          <label>
+            <input type="checkbox" checked>
+            Слайд-парк
+          </label>
+          <label>
+            <input type="checkbox">
+            Красные скалы
+          </label>
+        </fieldset>
+        <fieldset class="feedback__description-emotions description-emotions">
+          <legend class="description-emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
           <label>
             <textarea placeholder="Опишите подробно все свои восторги "></textarea>
           </label>
-          <a class="impression__button button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
-          <p class="button__addition">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
-        </div>
-      </section>
-    </form>
+          <div class="description-emotions__button-mark button-mark">
+            <a class="button-mark__button button" href="#">ОТПРАВИТЬ ОТЗЫВ</a>
+            <p class="button-mark__addition">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
+          </div>
+        </fieldset>
+      </form>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
