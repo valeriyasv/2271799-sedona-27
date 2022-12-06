@@ -11,25 +11,59 @@
   width: 284px;
   height: 58px;
   border: none;
+
+  &:hover {
+    background-color: #669EC0;
+  }
 }
 
-// .img {
-//   margin: 0 -20px;
-// }
-
 .main-page__title {
-  margin-top: 90px;
-  margin-bottom: 85px;
+  margin: 90px 19px 85px 19px;
+  display: flex;
+  align-items: center;
 }
 
 .main-page {
   background-image: url("../img/back-mobile.jpg.png");
   background-repeat: no-repeat;
-  margin: 0 -20px;
-  padding: 0 20px;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+
+  &--position {
+    background-position-y: 100%;
+  }
 }
 
 .container {
-  max-width: 284px;
-  margin: 0 auto;
+  padding: 0 18px;
 }
+
+// ------------------------------------- CATALOG--------------------------------------
+
+.main__img {
+  margin: 52px 45px 67px 45px;
+}
+
+.container-catalog {
+  padding: 0 20px;
+}
+
+// -------------------------------------------  FORM  ----------------------------------------
+
+.container-form {
+  padding: 0 20px;
+}
+
+.slogan__title {
+  .title-h2();
+  text-align: center;
+  margin: 36px 0 24px 0;
+}
+
+.slogan__text {
+  .text();
+  text-align: center;
+  margin-bottom: 28px;
+}
+
