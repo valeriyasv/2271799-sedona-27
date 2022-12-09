@@ -1,0 +1,30 @@
+.input {
+  height: 58px;
+  width: 280px;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  border: none;
+  background-color: #f2f2f2;
+
+  &::placeholder {
+    .title-h2();
+    color: #000000;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 430px;
+  }
+}
+
+.input--light {
+  &::placeholder {
+    .title-h2();
+    color: #000000;
+    opacity: 0.3;
+  }
+}

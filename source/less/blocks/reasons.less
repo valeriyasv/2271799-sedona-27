@@ -11,6 +11,12 @@
   &--light {
     color: #ffffff;
   }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+  }
 }
 
 .reasons__text {
@@ -28,23 +34,45 @@
     color: #ffffff;
     margin-bottom: 40px;
   }
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
 }
 
 .reasons__panel {
   background-color: @main-color;
   background-size: cover;
   width: 100%;
-  padding: 0 18px 0 18px;
+  padding: 0 18px;
   box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    padding: 42px 33px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 52px 50px;
+  }
 }
 
 .reasons__list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
   &--gray {
     background-color: #eeeeee;
     padding: 0 18px 0 18px;
     background-size: cover;
     width: 100%;
     box-sizing: border-box;
+
+    @media (min-width: @tablet-width) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 
@@ -56,4 +84,24 @@
 .reasons__row {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.reasons__item {
+  @media (min-width: @tablet-width) {
+    padding: 60px 33px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 69px 50px;
+  }
+}
+
+.reasons__item--gray {
+  @media (min-width: @tablet-width) {
+    padding: 52px 33px;
+  }
 }
