@@ -1,0 +1,21 @@
+.checkbox {
+  display: none;
+}
+
+.checkbox-text {
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: bold;
+  }
+}
+
+.label-checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
