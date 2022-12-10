@@ -1,0 +1,36 @@
+.description-emotions__button-mark {
+  width: 280px;
+  margin-bottom: 52.5px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.description-emotions__place {
+  resize: none;
+  width: 279px;
+  height: 150px;
+  padding: 16px;
+  border: none;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+
+  &::placeholder {
+    .title-h2();
+    text-align: left;
+    font-family: "PT Sans", sans-serif;
+    color: #000000;
+    opacity: 0.3;
+  }
+}
+

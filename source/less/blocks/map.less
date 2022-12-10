@@ -4,16 +4,35 @@
   font-weight: bold;
   margin-top: 38px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    padding-top: 61px;
+    padding-bottom: 37px;
+    margin: 0;
+  }
 }
 
 .map__text {
   .text();
   margin: 25px 0 32px 0;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding-bottom: 40px;
+  }
 }
 
 .map__search-button {
   width: 284px;
   height: 58px;
   margin-bottom: 49px;
+  border: 2px solid #81B3D2;
+
+  @media (min-width: @tablet-width) {
+    width: 458px;
+    margin-bottom: 58px;
+    text-align: center;
+  }
 }

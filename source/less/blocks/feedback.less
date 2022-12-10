@@ -1,5 +1,5 @@
 .feedback__enter-name {
-  border: o none;
+  border: none;
   margin: 24px 0 39px 0;
   padding: 0;
 }
@@ -14,6 +14,10 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 48px;
+  }
 }
 
 .feedback__visited-attractions {
@@ -21,4 +25,40 @@
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 48px;
+    margin-bottom: 42px;
+  }
+}
+
+.feeddback__main {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.feedback__title {
+  .title-h2();
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-top: 48px;
+    margin-bottom: 28px;
+  }
+}
+
+.feedback__label {
+  .text();
+  margin-left: 16px;
+  margin-top: 16px;
+}
+
+.feedback__description-emotions {
+  padding: 0;
+  margin: 0;
 }
