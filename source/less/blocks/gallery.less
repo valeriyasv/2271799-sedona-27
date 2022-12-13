@@ -1,7 +1,7 @@
 .gallery__title {
   .title-h2();
   text-align: center;
-  margin-top: 37px;
+  margin: 0;
   margin-bottom: 25px;
 
   @media (min-width: @tablet-width) {
@@ -12,12 +12,20 @@
 .gallery__text {
   .text();
   text-align: center;
-  margin-bottom: 37px;
+  margin: 0;
 }
 
 .gallery__image {
   display: flex;
   flex-direction: column;
+
+  &:not(:first-child) {
+    padding-top: 24px;
+
+    @media (min-width: @tablet-width) {
+      padding: 0;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     width: 50%;
@@ -39,5 +47,13 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+.gallery__wrapper-text {
+  padding: 41px 0 46px;
+
+  @media (min-width: @tablet-width) {
+    padding: 66px 95px;
   }
 }
