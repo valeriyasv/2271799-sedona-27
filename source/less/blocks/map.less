@@ -2,12 +2,12 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  margin-top: 38px;
   text-align: center;
+  margin: 0;
+  padding-bottom: 25px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
-    padding-top: 61px;
     padding-bottom: 37px;
     margin: 0;
   }
@@ -15,24 +15,41 @@
 
 .map__text {
   .text();
-  margin: 25px 0 32px 0;
   text-align: center;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    padding-bottom: 40px;
   }
 }
 
 .map__search-button {
-  width: 284px;
+  min-width: 284px;
   height: 58px;
   margin-bottom: 49px;
-  border: 2px solid #81B3D2;
+  padding: 0;
+  border: none;
 
   @media (min-width: @tablet-width) {
-    width: 458px;
+    width: 60%;
+    max-width: 485px;
     margin-bottom: 58px;
     text-align: center;
   }
+}
+
+.map__desc {
+  padding: 38px 29px 32px;
+
+  @media (min-width: @tablet-width) {
+    padding: 61px 167px 40px;
+  }
+}
+
+.map__iframe {
+  width: 100%;
+}
+
+.map__search {
+  text-align: center;
 }

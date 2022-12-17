@@ -2,10 +2,22 @@
   .amount();
   margin: 0;
   margin-left: 14px;
+  align-self: flex-end;
 }
 
 .like__submit {
   width: 23px;
   height: 21px;
   border: none;
+  background-color: #ffffff;
+  padding: 0;
+  align-self: flex-start;
+
+  @media (min-width: @tablet-width) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: @desctop-width) {
+    background-color: fade(#000000, 30%);
+  }
 }
