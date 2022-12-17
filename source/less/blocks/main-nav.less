@@ -3,6 +3,7 @@
   position: relative;
   background-color: @main-color;
   width: 100vw;
+  max-width: 1200px;
   margin: 0;
   padding: 0;
   z-index: 2;
@@ -53,7 +54,7 @@
 }
 
 .main-nav--closed .main-nav__toggle:hover::before {
-  box-shadow: 0 9px 0 0 fade(@main-color, 30%), 0 18px 0 0 fade(@main-color, 30%);
+  box-shadow: 0 9px 0 0 rgb(129 179 210), 0 18px 0 0 rgb(129 179 210);
   background-color: @main-color;
   opacity: 0.3;
 }
@@ -103,7 +104,7 @@
   bottom: 0;
   width: 100%;
   height: 7px;
-  display: none;
+  z-index: 12;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -111,5 +112,8 @@
 }
 
 .main-nav--closed .main-nav__list {
-  display: none;
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
+

@@ -22,6 +22,10 @@
       display: block;
     }
   }
+
+  &--shadow {
+    border-bottom: none;
+  }
 }
 
 .site-list__link {
@@ -30,16 +34,16 @@
   margin-bottom: 12px;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    color: #000000;
+  }
+
   &--current {
     @media (min-width: @tablet-width) {
       color: @current-color;
       text-decoration: none;
       text-align: center;
     }
-  }
-
-  @media (min-width: @tablet-width) {
-    color: #000000;
   }
 }
 

@@ -1,5 +1,7 @@
 .main-page__title {
   text-align: center;
+  width: 282px;
+  height: 214px;
 
   @media (min-width: @tablet-width) {
     width: 60%;
@@ -11,15 +13,38 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 90px 19px 85px;
+  text-align: center;
+  clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 90%);
+  position: relative;
 
   @media (min-width: @tablet-width) {
+    background-image: url("../img/back-desktop-main.png");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 77px 154px 90px;
+    clip-path: polygon(100% 0, 100% 93%, 90% 93%, 90% 85%, 50% 100%, 10% 85%, 10% 93%, 0 93%, 0 0);
+  }
 
-    &--position {
-      background-position-y: 100%;
+  @media (min-width: @desctop-width) {
+    background-image: url("../img/back-desktop-main.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: none;
+  }
+
+  &::before {
+    @media (min-width: @desctop-width) {
+      content: url("../img/decor-main.png");
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-bottom: -4px;
     }
+  }
+
+  &--position {
+    background-position-y: 100%;
   }
 }
 

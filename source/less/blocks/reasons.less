@@ -1,5 +1,7 @@
 .reasons__main {
   padding: 32px 18px;
+  max-width: 520px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     padding: 47px 124px 55px;
@@ -89,17 +91,19 @@
 .reasons__panel {
   background-color: @main-color;
   background-size: cover;
-  width: 100%;
   padding: 40px 18px;
   box-sizing: border-box;
+  min-width: 400px;
+  max-height: 256px;
 
   @media (min-width: @tablet-width) {
-    padding: 42px 33px;
+    padding-top: calc((40px + (52px - 40px)) * ((100vw - 320px) / (1200 - 320)));
     box-sizing: border-box;
   }
 
   @media (min-width: @desctop-width) {
     padding: 52px 50px;
+    box-sizing: border-box;
   }
 }
 
@@ -109,6 +113,7 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
+    padding: 0;
   }
 
   &--gray {
@@ -116,10 +121,12 @@
     background-size: cover;
     width: 100%;
     box-sizing: border-box;
+    padding: 24px 18px 28px;
 
     @media (min-width: @tablet-width) {
       display: flex;
       flex-direction: row;
+      padding: 0;
     }
   }
 }
@@ -127,6 +134,11 @@
 .reasons__image {
   width: 100%;
   object-fit: cover;
+  max-height: 260px;
+
+  @media (min-width: @tablet-width) {
+    max-height: 256px;
+  }
 }
 
 .reasons__row {
@@ -135,6 +147,15 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+  }
+}
+
+.reasons__row-reverse {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row-reverse;
   }
 }
 
@@ -150,33 +171,49 @@
     @media (min-width: @tablet-width) {
       padding: 60px 33px;
     }
-  }
-}
 
-.reasons__item--gray {
-  flex-direction: column;
-
-  &:nth-child(1) {
-    padding: 24px 8px;
-
-    @media (min-width: @tablet-width) {
-      padding: 52px 33px;
+    @media (min-width: @desctop-width) {
+      padding: 70px 50px;
     }
   }
 
-  &:nth-child(3) {
-    padding: 24px;
+  &--gray {
+    flex-direction: column;
 
-    @media (min-width: @tablet-width) {
-      padding: 41px 33px;
+    &:nth-child(1) {
+      padding: 0 8px 24px;
+
+      @media (min-width: @tablet-width) {
+        padding: 52px 33px;
+      }
+
+      @media (min-width: @desctop-width) {
+        padding: 63px 50px 41px;
+      }
     }
-  }
 
-  &:nth-child(5) {
-    padding: 24px 0 28px 0;
+    &:nth-child(3) {
+      padding: 24px;
 
-    @media (min-width: @tablet-width) {
-      padding: 52px 33px;
+      @media (min-width: @tablet-width) {
+        padding: 41px 33px;
+      }
+
+      @media (min-width: @desctop-width) {
+        padding: 52px 50px 51px;
+      }
+    }
+
+    &:nth-child(5) {
+      padding: 24px 0 0;
+
+      @media (min-width: @tablet-width) {
+        padding: 52px 33px;
+      }
+
+      @media (min-width: @desctop-width) {
+        padding: 63px 50px 41px;
+      }
     }
   }
 }

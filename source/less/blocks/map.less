@@ -24,13 +24,15 @@
 }
 
 .map__search-button {
-  width: 284px;
+  min-width: 284px;
   height: 58px;
   margin-bottom: 49px;
-  border: 2px solid @main-color;
+  padding: 0;
+  border: none;
 
   @media (min-width: @tablet-width) {
-    width: 458px;
+    width: 60%;
+    max-width: 485px;
     margin-bottom: 58px;
     text-align: center;
   }
@@ -46,4 +48,8 @@
 
 .map__iframe {
   width: 100%;
+}
+
+.map__search {
+  text-align: center;
 }

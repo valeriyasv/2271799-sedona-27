@@ -15,7 +15,7 @@
             <img class="logo__link-img" src="./img/logo.svg"  alt="Логотип Sedona" width="185" height="96">
           </a>
         </div>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -41,14 +41,14 @@
                 HTML ACADEMY
               </a>
             </li>
+            <div class="main-nav__shadow"></div>
           </ul>
-          <div class="main-nav__shadow"></div>
         </nav>
       </div>
     </header>
     <main class="main-container">
       <section class="main-page">
-        <img class="main-page__title" src="./img/main-img.svg" width="282" height="214" alt="Welcome to Sedona">
+        <img class="main-page__title" src="./img/main-img.svg" alt="Welcome to Sedona">
       </section>
       <section class="reasons">
         <div class="reasons__main">
@@ -61,7 +61,7 @@
             <P class="reasons__text reasons__text--number  reasons__text--light">— №1 —</P>
             <P class="reasons__text reasons__text--light">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</P>
           </div>
-          <img class="reasons__image--margin" src="./img/photo-city.jpg" alt="Фото города">
+          <img class="reasons__image" src="./img/photo-city.jpg" alt="Фото города">
         </div>
         <div class="reasons__row">
             <div class="reasons__list">
@@ -88,13 +88,13 @@
                 </div>
             </div>
         </div>
-        <div class="reasons__row">
-          <img class="reasons__image" src="./img/photo-bridge.png" alt="Фото мост Дьявола">
+        <div class="reasons__row-reverse">
           <div class="reasons__panel">
             <h3 class="reasons__title reasons__title--light">ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</h3>
             <P class="reasons__text reasons__text--number reasons__text--light">— №2 —</P>
             <P class="reasons__text reasons__text--light">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</P>
           </div>
+          <img class="reasons__image" src="./img/photo-bridge.png" alt="Фото мост Дьявола">
         </div>
         <div class="reasons__row">
           <div class="reasons__list reasons__list--gray">
@@ -124,7 +124,9 @@
             <h2 class="map__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
             <p class="map__text">УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ, И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
           </div>
-          <a href="#"><button class="map__search-button button">НАЙТИ ГОСТИНИЦУ</button></a>
+            <div class="map__search">
+            <a href="#"><button class="map__search-button button">НАЙТИ ГОСТИНИЦУ</button></a>
+          </div>
           <div class="map__image">
             <iframe class="map__iframe"
             height="350"
@@ -143,15 +145,15 @@
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"><div class="social__button"><img src="./img/vk-icon.svg" width="24" height="14"></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><div class="social__button social__button--margin"><img src="./img/youtube-icon.svg" width="21" height="18"></div></a>
+              <a class="social__link social__link--youtube" href="https://t.me/htmlacademy"><div class="social__button social__button--margin"><img src="./img/youtube-icon.svg" width="21" height="18"></div></a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy"><div class="social__button"><img src="./img/icon-youtube.svg.svg" width="20" height="14"></div></a>
+              <a class="social__link social__link--telegram" href="https://www.youtube.com/user/htmlacademyru"><div class="social__button"><img src="./img/icon-youtube.svg.svg" width="20" height="14"></div></a>
             </li>
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <b class="copyright__text">РАЗРАБОТАНО:</b>
+          <p class="copyright__text">РАЗРАБОТАНО</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="./img/htmlacademy.svg" width="27" height="34" alt="Логотип htmlacaemy"></a>
         </div>
       </div>

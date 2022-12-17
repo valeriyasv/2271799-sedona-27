@@ -3,5 +3,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    max-width: 576px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: @desctop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: 960px;
+    justify-content: space-between;
+    margin: 0;
+    padding: 17px 53px;
   }
 }

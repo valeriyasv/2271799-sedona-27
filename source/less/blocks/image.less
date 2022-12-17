@@ -10,6 +10,10 @@
   .text-author();
   margin: 0;
   color: @text-color;
+
+  @media (min-width: @desctop-width) {
+    color: #ffffff;
+  }
 }
 
 .image__like {
@@ -17,6 +21,7 @@
   flex-direction: row;
   align-content: flex-start;
   padding-bottom: 25px;
+  height: 25px;
 
   @media (min-width: @tablet-width) {
     padding: 28px 20px 27px 0;
@@ -30,6 +35,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desctop-width) {
+    background-color: fade(#000000, 30%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 
