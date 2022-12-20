@@ -93,11 +93,11 @@
   background-size: cover;
   padding: 40px 18px;
   box-sizing: border-box;
-  min-width: 400px;
   max-height: 256px;
 
   @media (min-width: @tablet-width) {
-    padding-top: calc((40px + (52px - 40px)) * ((100vw - 320px) / (1200 - 320)));
+    padding: 42px 33px;
+    max-width: 400px;
     box-sizing: border-box;
   }
 
@@ -137,6 +137,10 @@
   max-height: 260px;
 
   @media (min-width: @tablet-width) {
+    max-height: 256px;
+  }
+
+  @media (min-width: @desctop-width) {
     max-height: 256px;
   }
 }

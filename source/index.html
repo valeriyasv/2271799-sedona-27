@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="./css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
@@ -48,7 +52,11 @@
     </header>
     <main class="main-container">
       <section class="main-page">
-        <img class="main-page__title" src="./img/main-img.svg" alt="Welcome to Sedona">
+        <picture>
+          <source media="(min-width: 1280px)" srcset="./img/text-index-desktop.svg 1x, ./img/text-index-desktop@2x.svg 2x">
+          <source media="(min-width: 768px)" srcset="./img/text-index-tablet@1x.svg 1x, ./img/text-index-tablet@2x.svg 2x">
+          <img class="main-page__title" src="./img/main-img.svg" srcset="./img/text-index-mobile@2x.svg 2x" width="282" height="214" alt="Welcome to Sedona">
+        </picture>
       </section>
       <section class="reasons">
         <div class="reasons__main">
@@ -61,7 +69,11 @@
             <P class="reasons__text reasons__text--number  reasons__text--light">— №1 —</P>
             <P class="reasons__text reasons__text--light">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</P>
           </div>
-          <img class="reasons__image" src="./img/photo-city.jpg" alt="Фото города">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/photo-city-desktop@1x.jpg 1x, ./img/photo-city-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/photo-city-tablet@1x.jpg 1x, ./img/photo-city-tablet@2x.jpg 2x">
+            <img class="reasons__image" src="./img/photo-city-mobile.jpg" srcset="./img/photo-city-mobile@2x.jpg 2x" width="320" height="260" alt="Фото города">
+          </picture>
         </div>
         <div class="reasons__row">
             <div class="reasons__list">
@@ -94,7 +106,11 @@
             <P class="reasons__text reasons__text--number reasons__text--light">— №2 —</P>
             <P class="reasons__text reasons__text--light">ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ ОСМЕЛИТЕСЬ, КОНЕЧНО</P>
           </div>
-          <img class="reasons__image" src="./img/photo-bridge.png" alt="Фото мост Дьявола">
+          <picture>
+            <source media="(min-width: 1280px)" srcset="./img/photo-bridge-desktop@1x.jpg 1x, ./img/photo-bridge-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.jpg 1x, ./img/photo-bridge-tablet@2x.jpg 2x">
+            <img class="reasons__image" src="./img/photo-bridge-mobile@1x.jpg" srcset="./img/photo-bridge-mobile@2x.jpg 2x" width="320" height="260" alt="Фото мост Дьявола">
+          </picture>
         </div>
         <div class="reasons__row">
           <div class="reasons__list reasons__list--gray">
@@ -107,7 +123,7 @@
             <div class="reasons__item reasons__item--gray">
               <h3 class="reasons__title">КРАСИВАЯ ДОРОГА</h3>
               <p class="reasons__text reasons__text--gray-number">— №4 —</p>
-              <p class="reasons__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
+              <p class="reasons__text" >ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ НЕ СКУЧНО!</p>
             </div>
             <div class="hr"></div>
             <div class="reasons__item reasons__item--gray">
