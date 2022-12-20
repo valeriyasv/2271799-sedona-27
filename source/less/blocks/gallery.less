@@ -15,10 +15,6 @@
   margin: 0;
 }
 
-.gallery__image-way {
-  
-}
-
 .gallery__image {
   display: flex;
   flex-direction: column;
@@ -50,6 +46,11 @@
   }
 }
 
+.gallery__image-way {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
 
 .gallery__photo {
   @media (min-width: @tablet-width) {
