@@ -49,15 +49,21 @@
 .gallery__image-way {
   @media (min-width: @tablet-width) {
     width: 100%;
+    display: block;
   }
 }
 
-.gallery__photo {
+.gallery__photos {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+.gallery__photo {
+  display: block;
+  width: 100%;
 }
 
 .gallery__wrapper-text {
