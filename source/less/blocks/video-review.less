@@ -22,7 +22,17 @@
 }
 
 .video-review__image {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  text-align: center;
+
   @media (min-width: @tablet-width) {
-    width: 100%;
+    width: 648px;
+    height: 500px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 800px;
   }
 }

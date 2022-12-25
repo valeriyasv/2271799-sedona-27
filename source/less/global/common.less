@@ -3,6 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .page {
@@ -27,6 +28,9 @@
   padding: 0 18px;
 
   &--row {
+    padding-top: 39px;
+    padding-bottom: 23px;
+
     @media (min-width: @tablet-width) {
       display: flex;
       flex-direction: row;
@@ -55,6 +59,12 @@
 
   @media (min-width: @desctop-width) {
     padding: 0 40px;
+  }
+}
+
+.visually-hidden {
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 

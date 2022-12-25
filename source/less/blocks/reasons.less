@@ -2,6 +2,7 @@
   padding: 32px 18px;
   max-width: 520px;
   margin: 0 auto;
+  box-sizing: content-box;
 
   @media (min-width: @tablet-width) {
     padding: 47px 124px 55px;
@@ -92,18 +93,18 @@
   background-color: @main-color;
   background-size: cover;
   padding: 40px 18px;
-  box-sizing: border-box;
   max-height: 256px;
 
   @media (min-width: @tablet-width) {
     padding: 42px 33px;
-    max-width: 400px;
     box-sizing: border-box;
+    flex-shrink: 1;
   }
 
   @media (min-width: @desctop-width) {
     padding: 52px 50px;
     box-sizing: border-box;
+    max-width: 400px;
   }
 }
 
@@ -179,6 +180,7 @@
 
     @media (min-width: @desctop-width) {
       padding: 70px 50px;
+      max-width: 400px;
     }
   }
 
@@ -229,6 +231,10 @@
 
 .reasons__item-text {
   margin-left: 7px;
+
+  @media (min-width: @width-only-mobile) and (max-width: @tablet-width) {
+    max-width: 237px;
+  }
 }
 
 .reasons__text--gray-number {
@@ -236,6 +242,9 @@
 }
 
 .reasons-icon {
+  width: 40px;
+  height: 40px;
+
   @media (min-width: @tablet-width) {
     &:nth-child(1) {
       width: 77px;
