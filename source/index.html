@@ -9,7 +9,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -50,11 +50,7 @@
     </header>
     <main class="main-container">
       <section class="main-page">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/text-index-desktop.svg 1x, img/text-index-desktop@2x.svg 2x">
-          <source media="(min-width: 768px)" srcset="img/text-index-tablet@1x.svg 1x, img/text-index-tablet@2x.svg 2x">
-          <img class="main-page__title" src="img/main-img.svg" srcset="img/text-index-mobile@2x.svg 2x" width="282" height="214" alt="Welcome to Sedona">
-        </picture>
+        <img class="main-page__image" src="img/main-img.svg" width="282" height="214" alt="Welcome to Sedona">
       </section>
       <section class="reasons">
         <div class="reasons__main">
@@ -93,7 +89,7 @@
                 </svg>
                 <div class="reasons__item-text">
                   <h3 class="reasons__title reasons__title--left">ЕДА</h3>
-                  <p class="reasons__text reasons__text--left">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ<br class="visually-hidden"> БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
+                  <p class="reasons__text reasons__text--left">ВСЕГДА ЗАКАЗЫВАЙТЕ ФИРМЕННЫЙ БУРГЕР, ВЫ НЕ РАЗОЧАРУЕТЕСЬ!</p>
                 </div>
               </div>
               <div class="reasons__item reasons__item--icon">
@@ -168,18 +164,24 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <button class="social__button social__button--vk"></button>
+              <a class="social__button social__button--vk" href="https://vk.com/htmlacademy">
+                <svg width="24" height="14">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <button class="social__button social__button--telegram"></button>
+              <a class="social__button social__button--telegram" href="https://t.me/htmlacademy">
+                <svg width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <button class="social__button social__button--youtube"></button>
+              <a class="social__button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="20" height="14">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -188,7 +190,7 @@
           <p class="copyright__text">РАЗРАБОТАНО</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-html"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>

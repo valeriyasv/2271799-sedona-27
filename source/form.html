@@ -9,7 +9,7 @@
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/style.min.css" rel="stylesheet">
 </head>
 <body class="page__body">
   <header class="main-header">
@@ -52,7 +52,7 @@
   </header>
   <main class="main-container">
     <section class="main-page main-page--position">
-      <img class="main-page__img" src="./img/sedona.svg" width="229" height="39" alt="Надпись Седона">
+      <img class="main-page__img" src="img/sedona.svg" width="229" height="39" alt="Надпись Седона">
     </section>
     <div class="container-form">
       <section class="slogan">
@@ -163,18 +163,24 @@
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link" href="https://vk.com/htmlacademy">
-              <button class="social__button social__button--vk"></button>
+            <a class="social__button social__button--vk" href="https://vk.com/htmlacademy">
+              <svg width="24" height="14">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://t.me/htmlacademy">
-              <button class="social__button social__button--telegram"></button>
+            <a class="social__button social__button--telegram" href="https://t.me/htmlacademy">
+              <svg width="21" height="18">
+                <use xlink:href="img/sprite.svg#icon-telegram"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <button class="social__button social__button--youtube"></button>
+            <a class="social__button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="20" height="14">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -183,7 +189,7 @@
         <p class="copyright__text">РАЗРАБОТАНО</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-html"></use>
+            <use xlink:href="img/sprite.svg#htmlacademy"></use>
           </svg>
         </a>
       </div>
