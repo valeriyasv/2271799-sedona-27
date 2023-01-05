@@ -9,14 +9,14 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__inner">
         <div class="main-header__logo logo">
           <a class="logo__link" href="index.html">
-            <img class="logo__link-img" src="./img/logo.svg"  alt="Логотип Sedona" width="185" height="96">
+            <img class="logo__link-img" src="img/logo.svg"  alt="Логотип Sedona" width="185" height="96">
           </a>
         </div>
         <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -75,7 +75,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg width="23" height="21">
-                        <use xlink:href="img/sprite.svg#icon-like"></use>
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <p class="like__amount">1350</p>
@@ -97,7 +97,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg width="23" height="21">
-                        <use xlink:href="img/sprite.svg#icon-like"></use>
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <p class="like__amount">145</p>
@@ -119,7 +119,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg width="23" height="21">
-                        <use xlink:href="img/sprite.svg#icon-like"></use>
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <p class="like__amount">96</p>
@@ -141,7 +141,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg class="like__svg" width="23" height="21">
-                        <use xlink:href="img/sprite.svg#icon-like"></use>
+                        <use xlink:href="img/sprite.svg#like-icon"></use>
                       </svg>
                     </button>
                     <p class="like__amount">254</p>
@@ -172,18 +172,24 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="https://vk.com/htmlacademy">
-                <button class="social__button social__button--vk"></button>
+              <a class="social__button social__button--vk" href="https://vk.com/htmlacademy">
+                <svg width="24" height="14">
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://t.me/htmlacademy">
-                <button class="social__button social__button--telegram"></button>
+              <a class="social__button social__button--telegram" href="https://t.me/htmlacademy">
+                <svg width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-telegram"></use>
+                </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-                <button class="social__button social__button--youtube"></button>
+              <a class="social__button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <svg width="20" height="14">
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
+                </svg>
               </a>
             </li>
           </ul>
@@ -192,7 +198,7 @@
           <p class="copyright__text">РАЗРАБОТАНО</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-html"></use>
+              <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
           </a>
         </div>
