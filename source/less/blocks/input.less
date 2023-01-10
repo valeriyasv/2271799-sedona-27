@@ -19,12 +19,17 @@
   @media (min-width: @desctop-width) {
     width: 430px;
   }
-}
 
-.input--light {
-  &::placeholder {
-    .title-h2();
-    color: #000000;
-    opacity: 0.3;
+  &--light {
+    &::placeholder {
+      .title-h2();
+      color: #000000;
+      opacity: 0.3;
+    }
+
+    @media (min-width: @desctop-width) {
+      width: 402px;
+    }
   }
 }
+

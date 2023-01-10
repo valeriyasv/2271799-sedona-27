@@ -10,6 +10,8 @@
     <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
     <link href="./css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -19,7 +21,7 @@
             <img class="logo__link-img" src="img/logo.svg"  alt="Логотип Sedona" width="185" height="96">
           </a>
         </div>
-        <nav class="main-nav main-nav--opened main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button"></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -131,7 +133,7 @@
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="gallery__photo" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото: мост Дьявола">
+                  <img class="gallery__photo" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: мост Дьявола">
                 </picture>
                 <div class="image__desc">
                   <div class="image__desc-text">
@@ -149,23 +151,18 @@
                 </div>
               </div>
             </div>
-
         </section>
         <section class="video-review">
           <div class="video-review__wrapper">
             <h2 class="video-review__title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</h2>
             <p class="video-review__slogan">СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
-              <img class="video-review__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="video">
-            </picture>
+            <video class="video-review__image" poster="img/video-mobile@2x.jpg"></video>
           </div>
         </section>
       </div>
     </main>
     <footer class="main-footer">
-      <div class="container container--row">
+      <div class="main-footer__wrapper">
         <div class="main-footer__hashtag hashtag">
           <p class="main-footer__hashtag-text">#VISITSEDONA</p>
         </div>
@@ -204,5 +201,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>

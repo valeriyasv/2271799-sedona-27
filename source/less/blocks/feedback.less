@@ -69,7 +69,7 @@
   }
 }
 
-.feeddback__main {
+.feedback__main {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -78,6 +78,7 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
   }
 
   @media (min-width: @tablet-width) {
@@ -88,6 +89,22 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  &::after {
+    @media (min-width: @tablet-width) {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #dbdbdb;
+      top: 0;
+      margin-left: 323px;
+    }
+
+    @media (min-width: @desctop-width) {
+      margin-left: 493px;
+    }
   }
 }
 
@@ -106,7 +123,74 @@
   @media (min-width: @desctop-width) {
     margin: 0;
     margin-bottom: 28px;
-    max-width: 306px;
+  }
+
+  &--contact {
+    @media (min-width: @tablet-width) {
+      max-width: 280px;
+      margin-left: -20px;
+    }
+
+    @media (min-width: @desctop-width) {
+      text-align: left;
+      margin-left: 30px;
+    }
+  }
+
+  &--name {
+    @media (min-width: @tablet-width) {
+      text-align: left;
+      margin-left: 81px;
+    }
+
+    @media (min-width: @desctop-width) {
+      margin-left: 167px;
+    }
+  }
+
+  &--hr {
+    position: relative;
+    width: 100%;
+
+    &::after {
+      @media (min-width: @tablet-width) {
+        content: "";
+        position: absolute;
+        width: 123px;
+        height: 1px;
+        background-color: @border-form-color;
+        top: 50%;
+        margin-left: -36px;
+        left: 0;
+      }
+
+      @media (min-width: @desctop-width) {
+        width: 280px;
+      }
+    }
+
+    &::before {
+      @media (min-width: @tablet-width) {
+        content: "";
+        position: absolute;
+        width: 123px;
+        height: 1px;
+        background-color: @border-form-color;
+        top: 50%;
+        margin-right: -36px;
+        right: 0;
+      }
+
+      @media (min-width: @desctop-width) {
+        width: 280px;
+      }
+    }
+  }
+
+  &--margin {
+    margin-left: 36px;
+    margin-right: 36px;
+    max-width: 648px;
   }
 }
 
@@ -114,6 +198,7 @@
   .text();
   margin-left: 16px;
   margin-top: 16px;
+  position: relative;
 }
 
 .feedback__description-emotions {
@@ -130,5 +215,19 @@
 
   @media (min-width: @tablet-width) {
     margin: 0 auto;
+  }
+}
+
+.feedback__label--button {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-position: center;
+    margin-bottom: -20px;
   }
 }
