@@ -46,7 +46,9 @@ export const styles = () => {
 
    const optimizeImages = () => {
     return gulp.src('source/img/**/*.{png,jpg}')
-    .pipe(squoosh())
+    .pipe(squoosh({
+      webp: {}
+      }))
     .pipe(gulp.dest('build/img'))
   }
 
@@ -89,6 +91,7 @@ export const styles = () => {
   gulp.src([
   'source/fonts/*.{woff2,woff}',
   'source/*.ico',
+  'source/img/favicons/*.{png,svg}',
   ], {
   base: 'source'
   })
@@ -112,7 +115,7 @@ const server = (done) => {
   cors: true,
   notify: false,
   ui: false,
-  });
+  }),
   done();
 }
 
@@ -126,7 +129,7 @@ const reload = (done) => {
 
 // Watcher
 
-const watcher = () => {
+export const watcher = () => {
   gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
@@ -134,7 +137,7 @@ const watcher = () => {
 
 // Build
 
- const build = gulp.series(
+ export const build = gulp.series(
   clean,
   copy,
   optimizeImages,

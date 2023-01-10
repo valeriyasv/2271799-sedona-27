@@ -7,12 +7,21 @@
   clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 90%);
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.png");
+  }
+
   @media (min-width: @tablet-width) {
     background-image: url("../img/back-desktop-main.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 50%;
     padding: 77px 154px 90px;
     clip-path: polygon(100% 0, 100% 93%, 90% 93%, 90% 85%, 50% 100%, 10% 85%, 10% 93%, 0 93%, 0 0);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+    }
   }
 
   @media (min-width: @desctop-width) {
@@ -20,6 +29,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: none;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+    }
   }
 
   &::before {
@@ -35,18 +48,29 @@
 
   &--position {
     background-position-y: 100%;
+    padding: 52px 0 67px;
+
+    @media (min-width: @tablet-width) {
+      padding: 95px 0 117px;
+    }
+
+    @media (min-width: @desctop-width) {
+      padding: 101px 0 120px;
+    }
   }
 }
 
 .main-page__img {
   @media (min-width: @tablet-width) {
     text-align: center;
+    width: 460px;
+    height: 78px;
   }
 }
 
 .main-page__image {
   @media (min-width: @tablet-width) {
-    width: 461px;
+    width: 460px;
     height: 350px;
   }
 }
