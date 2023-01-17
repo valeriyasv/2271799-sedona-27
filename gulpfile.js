@@ -9,7 +9,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-squoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import {deleteAsync} from 'del';
+import del from 'del';
 import htmlmin from 'gulp-htmlmin';
 import browser from 'browser-sync';
 
@@ -30,11 +30,11 @@ export const styles = () => {
 
 // HTML
 
- const html = () => {
-  return gulp.src('source/*.html')
-  .pipe(htmlmin({ collapseWhitespace: true }))
-  .pipe(gulp.dest('build'));
-  }
+  const html = () => {
+    return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+    }
 
    const scripts = () => {
     return gulp.src('source/js/*.js')
@@ -101,9 +101,9 @@ export const styles = () => {
 
   // Clean
 
- const clean = () => {
-  return deleteAsync('build');
-  };
+const clean = () => {
+  return del('build');
+};
 
 // Server
 
@@ -137,19 +137,19 @@ export const watcher = () => {
 
 // Build
 
- export const build = gulp.series(
-  clean,
-  copy,
-  optimizeImages,
-  gulp.parallel(
-  styles,
-  html,
-  scripts,
-  svg,
-  sprite,
-  createWebp
-  ),
-  );
+  export const build = gulp.series(
+    clean,
+    copy,
+    optimizeImages,
+    gulp.parallel(
+    styles,
+    html,
+    scripts,
+    svg,
+    sprite,
+    createWebp
+    ),
+    );
 
   // Default
 

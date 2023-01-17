@@ -3,6 +3,10 @@
   margin: 0;
   margin-left: 14px;
   align-self: flex-end;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 9px;
+  }
 }
 
 .like__submit {
@@ -24,9 +28,3 @@
   }
 }
 
-.like__svg {
-  @media (min-width: @desctop-width) {
-    stroke: #ffffff;
-    fill: #ffffff;
-  }
-}

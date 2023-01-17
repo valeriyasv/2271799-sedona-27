@@ -17,12 +17,12 @@
     <header class="main-header">
       <div class="main-header__inner">
         <div class="main-header__logo logo">
-          <a class="logo__link" href="index.html">
+          <a href="index.html" class="logo__link">
             <img class="logo__link-img" src="img/logo.svg"  alt="Логотип Sedona" width="185" height="96">
           </a>
         </div>
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"></button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">ОТКРЫТЬ МЕНЮ</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a class="site-list__link site-list__link--current" href="index.html">
@@ -34,9 +34,7 @@
                 ФОТО И ВИДЕО
               </a>
             </li>
-            <li class="site-list__item site-list__item--empty">
-
-            </li>
+            <li class="site-list__item site-list__item--empty">&nbsp;</li>
             <li class="site-list__item">
               <a class="site-list__link" href="form.html">
                 ФОРМА ОТЗЫВА
@@ -47,28 +45,35 @@
                 HTML ACADEMY
               </a>
             </li>
-            <div class="main-nav__shadow"></div>
+            <li class="main-nav__shadow"></li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main-container">
       <section class="main-page main-page--position">
+        <h1 class="visually-hidden">ФОТО И ВИДЕО СЕДОНЫ</h1>
         <img class="main-page__img" src="img/sedona.svg" width="229" height="39" alt="Надпись Седона">
       </section>
       <div class="container-catalog">
         <section class="gallery">
             <div class="gallery__wrapper-text">
               <h2 class="gallery__title">ФОТО И ВИДЕО</h2>
-              <p class="gallery__text">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА? ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.</p>
+              <p class="gallery__text">НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА?&nbsp;<br class="transfer"><br class="transfer__desktop"> ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.</p>
             </div>
             <div class="gallery__photos">
+              <div class="hr"></div>
               <div class="gallery__image gallery__image--first image">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-way-desktop.jpg 1x, img/photo-way-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-way-tablet.jpg 1x, img/photo-way-tablet@2x.jpg 2x">
-                  <img class="gallery__image-way" src="img/photo-way-mobile.jpg" srcset="img/photo-way-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: дорога">
-                </picture>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-way-desktop.webp 1x, img/photo-way-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-way-tablet.webp 1x, img/photo-way-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-way-mobile.webp 1x, img/photo-way-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-way-desktop.jpg 1x, img/photo-way-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-way-tablet.jpg 1x, img/photo-way-tablet@2x.jpg 2x">
+                    <img class="gallery__image-way" src="img/photo-way-mobile.jpg" srcset="img/photo-way-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: дорога">
+                  </picture>
+                </a>
                 <div class="image__desc">
                   <div class="image__desc-text">
                     <h3 class="image__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
@@ -77,7 +82,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg width="23" height="21">
-                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                        <use xlink:href="img/sprite.svg#icon-like"></use>
                       </svg>
                     </button>
                     <p class="like__amount">1350</p>
@@ -86,11 +91,16 @@
               </div>
               <div class="hr"></div>
               <div class="gallery__image image">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-plant-desktop.jpg 1x, img/photo-plant-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-plant-tablet.jpg 1x, img/photo-plant-tablet@2x.jpg 2x">
-                  <img class="gallery__photo" src="img/photo-plant-mobile.jpg" srcset="img/photo-plant-mobile@2x.jpg 2x" alt="Фото: растение" width="280" height="280">
-                </picture>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-plant-desktop.webp 1x, img/photo-plant-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-plant-tablet.webp 1x, img/photo-plant-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-plant-mobile.webp 1x, img/photo-plant-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-plant-desktop.jpg 1x, img/photo-plant-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-plant-tablet.jpg 1x, img/photo-plant-tablet@2x.jpg 2x">
+                    <img class="gallery__photo" src="img/photo-plant-mobile.jpg" srcset="img/photo-plant-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: растение">
+                  </picture>
+                </a>
                 <div class="image__desc">
                   <div class="image__desc-text">
                     <h3 class="image__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
@@ -99,7 +109,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg width="23" height="21">
-                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                        <use xlink:href="img/sprite.svg#icon-like"></use>
                       </svg>
                     </button>
                     <p class="like__amount">145</p>
@@ -108,11 +118,16 @@
               </div>
               <div class="hr"></div>
               <div class="gallery__image image">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-forest-desktop.jpg 1x, img/photo-forest-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-forest-tablet.jpg 1x, img/photo-forest-tablet@2x.jpg 2x">
-                  <img class="gallery__photo" src="img/photo-forest-mobile.jpg" srcset="img/photo-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: дорога на север">
-                </picture>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-forest-desktop.webp 1x, img/photo-forest-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-forest-tablet.webp 1x, img/photo-forest-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-forest-mobile.webp 1x, img/photo-forest-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-forest-desktop.jpg 1x, img/photo-forest-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-forest-tablet.jpg 1x, img/photo-forest-tablet@2x.jpg 2x">
+                    <img class="gallery__photo" src="img/photo-forest-mobile.jpg" srcset="img/photo-forest-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: дорога на север">
+                  </picture>
+                </a>
                 <div class="image__desc">
                   <div class="image__desc-text">
                     <h3 class="image__title">ДОРОГА НА СЕВЕР</h3>
@@ -121,7 +136,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg width="23" height="21">
-                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                        <use xlink:href="img/sprite.svg#icon-like"></use>
                       </svg>
                     </button>
                     <p class="like__amount">96</p>
@@ -130,11 +145,16 @@
               </div>
               <div class="hr"></div>
               <div class="gallery__image image">
-                <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                  <img class="gallery__photo" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: мост Дьявола">
-                </picture>
+                <a href="#">
+                  <picture>
+                    <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="img/photo-bridge-mobile.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="gallery__photo" src="img/photo-bridge-mobile.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Фото: мост Дьявола">
+                  </picture>
+                </a>
                 <div class="image__desc">
                   <div class="image__desc-text">
                     <h3 class="image__title">МОСТ ДЬЯВОЛА</h3>
@@ -143,7 +163,7 @@
                   <div class="image__like like">
                     <button class="like__submit">
                       <svg class="like__svg" width="23" height="21">
-                        <use xlink:href="img/sprite.svg#like-icon"></use>
+                        <use xlink:href="img/sprite.svg#icon-like"></use>
                       </svg>
                     </button>
                     <p class="like__amount">254</p>
@@ -151,12 +171,27 @@
                 </div>
               </div>
             </div>
+            <div class="hr"></div>
         </section>
-        <section class="video-review">
-          <div class="video-review__wrapper">
-            <h2 class="video-review__title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</h2>
-            <p class="video-review__slogan">СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
-            <video class="video-review__image" poster="img/video-mobile@2x.jpg"></video>
+        <section class="video-preview">
+          <div class="video-preview__wrapper">
+            <h2 class="video-preview__title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</h2>
+            <p class="video-preview__slogan">СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И&nbsp;<br class="transfer__mobile"> СКОРЕЕ ЗА БИЛЕТАМИ, ПОКА ОНИ&nbsp;<br class="transfer"><br class="transfer__desktop"> НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!</p>
+            <div class="video-preview__visual">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop.webp 1x, img/video-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet.webp 1x, img/video-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/video-mobile.webp 1x, img/video-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="video-preview__image" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" width="280" height="177" alt="video">
+              </picture>
+              <button class="video-preview__play">
+                <svg width="48" height="54">
+                  <use xlink:href="img/sprite.svg#icon-play"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </section>
       </div>
@@ -169,22 +204,25 @@
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__button social__button--vk" href="https://vk.com/htmlacademy">
-                <svg width="24" height="14">
+              <a class="social__button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">ПЕРЕЙТИ В СОЦ СЕТЬ ВКОНТАКТЕ СЕДОНЫ</span>
+                <svg class="social__button--icon" width="24" height="14">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__button social__button--telegram" href="https://t.me/htmlacademy">
-                <svg width="21" height="18">
+              <a class="social__button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">ПЕРЕЙТИ В ТЕЛЕГРАМ СЕДОНЫ</span>
+                <svg class="social__button--icon" width="21" height="18">
                   <use xlink:href="img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__button social__button--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <svg width="20" height="14">
+              <a class="social__button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">ПЕРЕЙТИ В ЮТУБ СЕДОНЫ</span>
+                <svg class="social__button--icon" width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>
@@ -192,8 +230,8 @@
           </ul>
         </div>
         <div class="main-footer__copyright copyright">
-          <p class="copyright__text">РАЗРАБОТАНО</p>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <p class="copyright__text">РАЗРАБОТАНО</p>
             <svg width="27" height="34">
               <use xlink:href="img/sprite.svg#htmlacademy"></use>
             </svg>
