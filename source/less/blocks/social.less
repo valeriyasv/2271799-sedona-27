@@ -8,12 +8,12 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding: 33px 0 47px;
+  padding: 33px 0 41px;
+  gap: 6px;
 
   @media (min-width: @tablet-width) {
-    margin-left: 97px;
-    margin-right: 100px;
     padding: 0;
+    margin-right: 9px;
   }
 
   @media (min-width: @desctop-width) {
@@ -31,7 +31,16 @@
   justify-content: center;
   border: none;
 
-  &--telegram {
-    margin: 0 6px 0 6px;
+  &--icon {
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: @hover-button-color;
+    color: fade(#ffffff, 0.3);
+  }
+
+  &:active {
+    background-color: @active-button-color;
   }
 }

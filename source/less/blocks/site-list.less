@@ -13,6 +13,19 @@
     width: 20%;
     height: 56px;
     box-sizing: border-box;
+
+    // &:hover {
+    //   color: @main-color;
+    // }
+
+    // &:current {
+    //   color: #766357;
+    // }
+
+    // &:disabled {
+    //   color: #000000;
+    //   opacity: 0.3;
+    // }
   }
 
   &--empty {
@@ -36,6 +49,19 @@
 
   @media (min-width: @tablet-width) {
     color: #000000;
+
+    &:hover {
+      color: @main-color;
+    }
+
+    &:active {
+      color: #766357;
+    }
+
+    &:disabled {
+      color: #000000;
+      opacity: 0.3;
+    }
   }
 
   &--current {

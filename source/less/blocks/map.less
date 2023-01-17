@@ -4,11 +4,11 @@
   font-weight: bold;
   text-align: center;
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
-    padding-bottom: 37px;
+    padding-bottom: 32px;
     margin: 0;
   }
 }
@@ -29,7 +29,7 @@
   margin-bottom: 49px;
   padding: 0;
   border: none;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: bold;
 
   @media (min-width: @tablet-width) {
@@ -38,13 +38,21 @@
     margin-bottom: 58px;
     text-align: center;
   }
+
+  @media (min-width: @desctop-width) {
+    margin-bottom: 66px;
+  }
 }
 
 .map__desc {
-  padding: 38px 29px 32px;
+  padding: 40px 29px 32px;
 
   @media (min-width: @tablet-width) {
-    padding: 61px 167px 40px;
+    padding: 61px 0 40px;
+  }
+
+  @media (min-width: @desctop-width) {
+    padding: 61px 0 47px;
   }
 }
 

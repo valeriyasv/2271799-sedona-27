@@ -1,5 +1,5 @@
 .page__body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -13,14 +13,20 @@
 .button {
   background-color: @main-color;
   color: #ffffff;
-  // font-size: 21px;
   font-weight: bold;
-  // width: 284px;
   height: 58px;
   border: none;
 
   &:hover {
-    background-color: #669ec0;
+    background-color: @hover-button-color;
+  }
+
+  &:active {
+    background-color: @active-button-color;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }
 
@@ -44,14 +50,21 @@
   }
 
   @media (min-width: @desctop-width) {
-    padding: 0 40px;
+    padding: 0;
   }
 }
 
 .visually-hidden {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container-form {
@@ -69,8 +82,45 @@
 .hr {
   height: 1px;
   background-color: #d6d6d6;
+  position: absolute;
+  left: 0;
+  right: 0;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.transfer {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desctop-width) {
+    display: none;
+  }
+}
+
+.transfer__mobile {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.transfer__desktop {
+  display: none;
+
+  @media (min-width: @desctop-width) {
+    display: block;
+  }
+}
+
+.transfer__width {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
   }
 }

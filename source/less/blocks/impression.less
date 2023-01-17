@@ -1,4 +1,4 @@
-.impession__container {
+.impression__container {
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
@@ -7,6 +7,7 @@
     margin: 0;
     margin-left: auto;
     margin-right: auto;
+    gap: 16px;
   }
 
   @media (min-width: @desctop-width) {
@@ -17,6 +18,79 @@
     justify-content: space-between;
     margin: 0;
     padding: 17px 53px;
+    gap: 28px;
   }
 }
 
+.impression__input {
+  display: none;
+}
+
+.impression__label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  gap: 16px;
+
+  @media (min-width: @tablet-width) {
+    flex: 0 0 280px;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    vertical-align: middle;
+  }
+
+  &:hover {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #e5e5e5;
+      vertical-align: middle;
+    }
+  }
+
+  &:disabled {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      vertical-align: middle;
+      background-color: #e2e2e2;
+    }
+  }
+
+  &:active {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      background-color: #d5d5d5;
+      vertical-align: middle;
+    }
+  }
+}
+
+.impression__input:checked + .impression__label::before {
+  content: url("/img/icon-shape.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
