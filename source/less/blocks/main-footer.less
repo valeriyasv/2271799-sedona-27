@@ -10,6 +10,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    color: @main-color;
+  }
 }
 
 .main-footer__wrapper {
@@ -19,13 +23,13 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 36px 60px;
+    padding: 32px 60px 32px 60px;
   }
 
   @media (min-width: @desctop-width) {
-    padding: 36px 136px 36px 116px;
+    padding: 36px 120px 36px 120px;
   }
 }
 

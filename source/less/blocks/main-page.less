@@ -2,10 +2,28 @@
   background-image: url("../img/back-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 90px 19px 85px;
+  background-color: #abc3d6;
+  padding: 90px 19px 81px;
   text-align: center;
-  clip-path: polygon(0 0, 100% 0, 100% 89%, 50% 100%, 0 90%);
   position: relative;
+
+  &::before {
+    content: url("../img/decor-mobile.svg");
+    position: absolute;
+    bottom: 0;
+    z-index: 6;
+    height: 57px;
+    width: 100%;
+    left: 0;
+
+    @media (min-width: @tablet-width) {
+      content: url("../img/decor-tablet.svg");
+    }
+
+    @media (min-width: @desctop-width) {
+      content: url("../img/decor-desktop.svg");
+    }
+  }
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/back-mobile@2x.png");
@@ -16,8 +34,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50%;
-    padding: 77px 154px 90px;
-    clip-path: polygon(100% 0, 100% 93%, 90% 93%, 90% 85%, 50% 100%, 10% 85%, 10% 93%, 0 93%, 0 0);
+    padding: 77px 154px 87px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.png");
@@ -28,34 +45,22 @@
     background-image: url("../img/back-desktop-main.png");
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: none;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.png");
     }
   }
 
-  &::before {
-    @media (min-width: @desctop-width) {
-      content: url("../img/decor-main.png");
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin-bottom: -4px;
-    }
-  }
-
   &--position {
     background-position-y: 100%;
-    padding: 52px 0 67px;
+    padding: 52px 0 63px;
 
     @media (min-width: @tablet-width) {
-      padding: 95px 0 117px;
+      padding: 95px 0 113px;
     }
 
     @media (min-width: @desctop-width) {
-      padding: 101px 0 120px;
+      padding: 101px 0 118px;
     }
   }
 }
