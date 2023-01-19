@@ -17,6 +17,7 @@
     "gulp-svgmin": "^4.1.0",
     "gulp-svgstore": "^9.0.0",
     "gulp-terser": "^2.1.0",
+    "del": "^7.0.0",
     "postcss": "^8.3.11",
     "postcss-csso": "^6.0.1",
     "stylelint": "13.13.1",
@@ -27,7 +28,6 @@
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "lint": "npm run editorconfig && npm run stylelint",
     "build": "gulp styles",
-    "del": "^7.0.0",
     "start": "gulp",
     "css": "gulp css"
   },
@@ -51,6 +51,6 @@
   },
   "type": "module",
   "dependencies": {
-
+    "del": "^7.0.0"
   }
 }
