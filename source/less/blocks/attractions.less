@@ -1,7 +1,12 @@
 .attractions__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-wrap: nowrap;
+
   @media (min-width: @tablet-width) {
-    display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 480px;
     margin: 0;
@@ -10,11 +15,10 @@
   }
 
   @media (min-width: @desctop-width) {
-    display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     max-width: 960px;
     margin: 0;
+    gap: 51px;
     padding: 31px 44px;
   }
 }
@@ -23,12 +27,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
 
-  &:not(:last-child) {
-    margin-bottom: 16px;
-
+  &:not(:nth-child(2n)) {
     @media (min-width: @tablet-width) {
-      margin: 0;
+      margin-right: 16px;
     }
   }
 
@@ -36,5 +41,70 @@
     flex: 0 0 224px;
     margin: 0;
   }
+
+  @media (min-width: @desctop-width) {
+    flex: 0 0 184px;
+    margin: 0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 46px;
+    height: 46px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    vertical-align: middle;
+    margin-right: 16px;
+  }
+
+  &:hover {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      border-radius: 4px;
+      background-color: #e5e5e5;
+      vertical-align: middle;
+      margin-right: 16px;
+    }
+  }
+
+  &:active {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      border-radius: 4px;
+      background-color: #e5e5e5;
+      vertical-align: middle;
+      margin-right: 16px;
+    }
+  }
+
+  &:disabled {
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+      border-radius: 4px;
+      background-color: #e2e2e2;
+      vertical-align: middle;
+      margin-right: 16px;
+    }
+  }
 }
 
+.attractions__input {
+  display: none;
+}
+
+.attractions__input:checked + .attractions__label::before {
+  content: url("/img/icon-tick.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,15 +1,15 @@
 .reasons__main {
-  padding: 32px 18px;
+  padding: 34px 18px 15px;
   max-width: 520px;
   margin: 0 auto;
   box-sizing: content-box;
 
   @media (min-width: @tablet-width) {
-    padding: 47px 124px 55px;
+    padding: 49px 124px 55px;
   }
 
   @media (min-width: @desctop-width) {
-    padding: 59px 0 44px;
+    padding: 60px 124px 43px;
   }
 }
 
@@ -21,12 +21,15 @@
   &--left {
     text-align: left;
     padding-bottom: 16px;
-    padding-top: 8px;
+    padding-top: 9px;
 
     @media (min-width: @tablet-width) {
       text-align: center;
-      padding-top: 26px;
-      padding-bottom: 30px;
+      padding: 21px 0;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding: 26px 0;
     }
   }
 
@@ -40,14 +43,14 @@
   }
 
   &--main {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
 
     @media (min-width: @tablet-width) {
       font-size: 21px;
       line-height: 26px;
       text-align: center;
       margin: 0;
-      margin-bottom: 35px;
+      margin-bottom: 30px;
     }
   }
 }
@@ -61,10 +64,16 @@
     .text();
     text-align: left;
     margin-bottom: 25px;
+    max-width: 237px;
 
     @media (min-width: @tablet-width) {
       margin: 0;
       text-align: center;
+      max-width: 190px;
+    }
+
+    @media (min-width: @desctop-width) {
+      max-width: 320px;
     }
   }
 
@@ -74,14 +83,19 @@
 
   &--light {
     color: #ffffff;
+
+    @media (min-width: @desctop-width) {
+      min-width: 265px;
+    }
   }
 
   &--number {
-    margin: 11px 0 17px 0;
+    padding: 11px 0 17px 0;
 
     @media (min-width: @tablet-width) {
-      margin-top: 20px;
-      margin-bottom: 30px;
+      margin-top: 13px;
+      margin-bottom: 22px;
+      padding: 0;
     }
   }
 
@@ -96,29 +110,47 @@
 .reasons__panel {
   background-color: @main-color;
   background-size: cover;
-  padding: 40px 18px;
-  max-height: 256px;
+  padding: 38px 18px 36px;
+  position: relative;
+
+  &--decor {
+    padding: 70px 18px 40px;
+
+    @media (max-width: @width-mobile) {
+      &::before {
+        content: url("../img/decor-mobile-blue.svg");
+        position: absolute;
+        top: 0;
+        height: 37px;
+        width: 100%;
+        margin-left: -18px;
+      }
+    }
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 42px 33px;
+    padding: 53px 33px;
     box-sizing: border-box;
     flex-shrink: 3;
+    max-width: 256px;
+    max-height: 256px;
   }
 
   @media (min-width: @desctop-width) {
-    padding: 52px 50px;
+    padding: 52px 70px;
     box-sizing: border-box;
     max-width: 400px;
   }
 }
 
 .reasons__list {
-  padding: 23px 18px 46px;
+  padding: 23px 18px 43px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: row;
     padding: 0;
+    align-items: center;
   }
 
   &--gray {
@@ -126,12 +158,22 @@
     background-size: cover;
     width: 100%;
     box-sizing: border-box;
-    padding: 24px 18px 28px;
+    padding: 25px 18px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 
     @media (min-width: @tablet-width) {
       display: flex;
       flex-direction: row;
-      padding: 0;
+      padding: 41px 38px 41px 33px;
+      gap: 85px;
+    }
+
+    @media (min-width: @desctop-width) {
+      align-items: center;
+      gap: 138px;
+      padding: 50px;
     }
   }
 }
@@ -179,53 +221,70 @@
 
   &--icon {
     @media (min-width: @tablet-width) {
-      padding: 60px 33px;
+      padding: 60px 23px 54px 18px;
     }
-
-    @media (min-width: @desctop-width) {
-      padding: 70px 50px;
-      max-width: 400px;
-    }
-  }
-
-  &--gray {
-    flex-direction: column;
 
     &:nth-child(1) {
-      padding: 0 8px 24px;
-
-      @media (min-width: @tablet-width) {
-        padding: 52px 33px;
-      }
-
       @media (min-width: @desctop-width) {
-        padding: 63px 50px 41px;
+        padding: 70px 50px 70px 74px;
+        max-width: 400px;
+      }
+    }
+
+    &:nth-child(2) {
+      @media (min-width: @desctop-width) {
+        padding: 70px 50px 70px 80px;
+        max-width: 400px;
       }
     }
 
     &:nth-child(3) {
-      padding: 24px;
-
-      @media (min-width: @tablet-width) {
-        padding: 41px 33px;
-      }
-
       @media (min-width: @desctop-width) {
-        padding: 52px 50px 51px;
+        padding: 60px 23px 54px 101px;
+        max-width: 400px;
       }
     }
+  }
 
-    &:nth-child(5) {
-      padding: 24px 0 0;
+  &--gray {
+    padding: 0;
+    flex-direction: column;
 
-      @media (min-width: @tablet-width) {
-        padding: 52px 33px;
-      }
+    // &:nth-child(1) {
+    //   padding: 0 8px 24px;
 
-      @media (min-width: @desctop-width) {
-        padding: 63px 50px 41px;
-      }
-    }
+    //   @media (min-width: @tablet-width) {
+    //     padding: 52px 33px 52px 18px;
+    //   }
+
+    //   @media (min-width: @desctop-width) {
+    //     padding: 63px 50px 41px;
+    //   }
+    // }
+
+    // &:nth-child(3) {
+    //   padding: 24px;
+
+    //   @media (min-width: @tablet-width) {
+    //     padding: 41px 33px 41px 59px;
+    //   }
+
+    //   @media (min-width: @desctop-width) {
+    //     padding: 52px 50px 51px;
+    //   }
+    // }
+
+    // &:nth-child(5) {
+    //   padding: 24px 0 0;
+
+    //   @media (min-width: @tablet-width) {
+    //     padding: 52px 14px 52px 33px;
+    //   }
+
+    //   @media (min-width: @desctop-width) {
+    //     padding: 63px 50px 41px;
+    //   }
+    // }
   }
 }
 
@@ -236,31 +295,38 @@
 .reasons__item-text {
   margin-left: 7px;
 
-  @media (min-width: @width-only-mobile) and (max-width: @tablet-width) {
+  @media (min-width: @width-mobile) and (max-width: @tablet-width) {
     max-width: 237px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
   }
 }
 
 .reasons__text--gray-number {
-  padding: 20px 0 25px;
-}
-
-.reasons-icon {
-  width: 40px;
-  height: 40px;
+  padding: 11px 0 17px;
 
   @media (min-width: @tablet-width) {
-    &:nth-child(1) {
+    padding: 11px 0 27px;
+  }
+}
+
+.reasons__icon {
+  flex-shrink: 0;
+
+  @media (min-width: @tablet-width) {
+    &--house {
       width: 77px;
       height: 72px;
     }
 
-    &:nth-child(2) {
+    &--burger {
       width: 80px;
       height: 68px;
     }
 
-    &:nth-child(3) {
+    &--gift {
       width: 66px;
       height: 75px;
     }

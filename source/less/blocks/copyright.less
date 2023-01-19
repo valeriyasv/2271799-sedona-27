@@ -1,8 +1,20 @@
 .copyright__link {
   margin-left: 12px;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
   padding: 0;
   align-self: flex-start;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: @main-color;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
 
 .copyright__text {
