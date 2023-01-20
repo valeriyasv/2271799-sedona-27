@@ -112,6 +112,7 @@
   background-size: cover;
   padding: 38px 18px 36px;
   position: relative;
+  // width: 100%;
 
   &--decor {
     padding: 70px 18px 40px;
@@ -131,8 +132,8 @@
   @media (min-width: @tablet-width) {
     padding: 62px 33px;
     box-sizing: border-box;
-    flex-shrink: 3;
-    max-width: 256px;
+    flex-shrink: 0;
+    width: 256px;
     max-height: 256px;
 
     &--decor {
@@ -143,7 +144,7 @@
   @media (min-width: @desctop-width) {
     padding: 52px 70px;
     box-sizing: border-box;
-    max-width: 400px;
+    width: 400px;
   }
 }
 
@@ -187,6 +188,10 @@
   }
 }
 
+.reasons__picture {
+  width: 100%;
+}
+
 .reasons__image {
   width: 100%;
   object-fit: cover;
@@ -208,6 +213,7 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
