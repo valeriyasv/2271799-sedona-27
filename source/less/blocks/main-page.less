@@ -6,15 +6,17 @@
   padding: 90px 19px 81px;
   text-align: center;
   position: relative;
+  clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
 
   &::before {
-    content: url("../img/decor-mobile.svg");
+    content: "";
     position: absolute;
-    bottom: 0;
-    z-index: 6;
+    bottom: -1px;
+    margin: auto;
     height: 57px;
     width: 100%;
     left: 0;
+    right: 0;
 
     @media (min-width: @tablet-width) {
       content: url("../img/decor-tablet.svg");
@@ -35,6 +37,7 @@
     background-size: cover;
     background-position: 50%;
     padding: 77px 154px 87px;
+    clip-path: none;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.png");
@@ -54,9 +57,11 @@
   &--position {
     background-position-y: 100%;
     padding: 52px 0 63px;
+    clip-path: polygon(100% 0, 100% 84%, 50% 100%, 0 84%, 0 0);
 
     @media (min-width: @tablet-width) {
       padding: 95px 0 113px;
+      clip-path: none;
     }
 
     @media (min-width: @desctop-width) {

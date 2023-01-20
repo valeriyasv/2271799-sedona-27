@@ -31,6 +31,12 @@
   font-weight: bold;
   line-height: 26px;
 
+  &:last-child {
+    @media (min-width: @desctop-width) {
+      margin-left: -18px;
+    }
+  }
+
   &:not(:nth-child(2n)) {
     @media (min-width: @tablet-width) {
       margin-right: 16px;
@@ -103,8 +109,8 @@
 }
 
 .attractions__input:checked + .attractions__label::before {
-  content: url("/img/icon-tick.svg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  content: "";
+  background-image: url("/img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

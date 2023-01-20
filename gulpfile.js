@@ -9,7 +9,7 @@ import terser from 'gulp-terser';
 import squoosh from 'gulp-squoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
-import del from 'del';
+import  {deleteAsync} from 'del';
 import htmlmin from 'gulp-htmlmin';
 import browser from 'browser-sync';
 
@@ -102,7 +102,7 @@ export const styles = () => {
   // Clean
 
 const clean = () => {
-  return del('build');
+  return deleteAsync('build');
 };
 
 // Server

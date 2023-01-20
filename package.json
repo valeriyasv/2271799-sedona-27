@@ -6,7 +6,6 @@
     "@htmlacademy/editorconfig-cli": "1.0.0",
     "autoprefixer": "^10.4.0",
     "browser-sync": "2.27.7",
-    "del": "^6.1.1",
     "gulp": "4.0.2",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
@@ -50,12 +49,5 @@
   "engines": {
     "node": "^16"
   },
-<<<<<<< HEAD
-  "type": "module",
-  "dependencies": {
-    "del": "^7.0.0"
-  }
-=======
   "type": "module"
->>>>>>> 24b6a21b0f194404ff11b32105e37400884600d1
 }

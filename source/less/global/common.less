@@ -82,45 +82,57 @@
 .hr {
   height: 1px;
   background-color: #d6d6d6;
-  position: absolute;
   left: 0;
   right: 0;
 
   @media (min-width: @tablet-width) {
     display: none;
   }
+
+  &--catalog {
+    position: absolute;
+    width: 100%;
+  }
 }
 
 .transfer {
-  display: none;
-
-  @media (min-width: @tablet-width) {
+  &--mobile {
     display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
   }
 
-  @media (min-width: @desctop-width) {
+  &--tablet {
     display: none;
-  }
-}
 
-.transfer__mobile {
-  @media (min-width: @tablet-width) {
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  &--desktop {
     display: none;
+
+    @media (min-width: @desctop-width) {
+      display: block;
+    }
   }
-}
 
-.transfer__desktop {
-  display: none;
-
-  @media (min-width: @desctop-width) {
+  &--mobile-desk {
     display: block;
+
+    @media (min-width: 767px) and (max-width: 1199px) {
+      display: none;
+    }
   }
-}
 
-.transfer__width {
-  display: none;
+  &--tab-desk {
+    display: none;
 
-  @media (min-width: @tablet-width) {
-    display: block;
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
   }
 }
