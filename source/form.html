@@ -87,15 +87,19 @@
               <div class="hr"></div>
               <fieldset class="fieldset feedback__contact-info contact-info">
                 <legend class="feedback__title feedback__title--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-                <label class="feedback__label feedback__label--phone">
+                <label class="feedback__label">
                   <span class="visually-hidden">ВВЕДИТЕ ТЕЛЕФОН</span>
                   КОНТАКТНЫЙ ТЕЛЕФОН*:<br>
-                  <input class="input input--light" type="tel" placeholder="Введите телефон">
+                  <div class="input__phone">
+                    <input class="input input--light" type="tel" placeholder="Введите телефон">
+                  </div>
                 </label>
-                <label class="feedback__label feedback__label--email">
+                <label class="feedback__label">
                   <span class="visually-hidden">ВВЕДИТЕ АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</span>
                   ЭЛЕКТРОННАЯ ПОЧТА*:<br>
-                  <input class="input input--light input--last" type="email" placeholder="Введите e-mail">
+                  <div class="input__email">
+                    <input class="input input--light input--last" type="email" placeholder="Введите e-mail">
+                  </div>
                 </label>
               </fieldset>
             </div>
@@ -103,11 +107,11 @@
             <fieldset class="fieldset feedback__impression impression">
               <legend class="feedback__title feedback__title--hr">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
               <div class="impression__container">
-                <input class="impression__input" type="checkbox" id="positive" checked>
+                <input class="impression__input" type="checkbox" id="positive" name="question" value="good" checked>
                 <label class="impression__label" for="positive">Скорее положительное</label>
-                <input class="impression__input" type="checkbox" id="negative">
+                <input class="impression__input" type="checkbox" name="question" value="bad" id="negative">
                 <label class="impression__label" for="negative">Скорее отрицательное</label>
-                <input class="impression__input" type="checkbox" id="unanswered">
+                <input class="impression__input" type="checkbox" name="question" value="unknow" id="unanswered">
                 <label class="impression__label" for="unanswered">Затрудняюсь ответить</label>
               </div>
             </fieldset>
@@ -115,11 +119,11 @@
             <fieldset class="fieldset feedback__visited-attractions attractions">
               <legend class="feedback__title feedback__title--hr">ПОСЕЩЕННЫЕ<br> ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
               <div class="attractions__wrapper">
-                <input class="attractions__input" type="checkbox" id="bridge" checked>
+                <input class="attractions__input" type="checkbox" name="ask" value="devil" id="bridge" checked>
                 <label class="attractions__label" for="bridge">Мост Дьявола</label>
-                <input class="attractions__input" type="checkbox" id="mountain" checked>
+                <input class="attractions__input" type="checkbox" name="ask" value="bell" id="mountain" checked>
                 <label class="attractions__label" for="mountain">Гора-Колокол</label>
-                <input class="attractions__input" type="checkbox" checked id="park">
+                <input class="attractions__input" type="checkbox" name="ask" value="slide" checked id="park">
                 <label class="attractions__label" for="park">Слайд-парк</label>
                 <input class="attractions__input" type="checkbox" id="rock">
                 <label class="attractions__label" for="rock">Красные скалы</label>
