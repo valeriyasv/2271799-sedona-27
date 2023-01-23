@@ -15,10 +15,11 @@
   }
 
   @media (min-width: @desctop-width) {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     max-width: 960px;
     margin: 0;
-    gap: 51px;
+    gap: 64px;
     padding: 31px 44px;
   }
 }
@@ -31,11 +32,11 @@
   font-weight: bold;
   line-height: 26px;
 
-  &:last-child {
-    @media (min-width: @desctop-width) {
-      margin-left: -18px;
-    }
-  }
+  // &:last-child {
+  //   @media (min-width: @desctop-width) {
+  //     margin-left: -18px;
+  //   }
+  // }
 
   &:not(:nth-child(2n)) {
     @media (min-width: @tablet-width) {
@@ -44,13 +45,29 @@
   }
 
   @media (min-width: @tablet-width) {
-    flex: 0 0 224px;
+    width: 224px;
     margin: 0;
   }
 
   @media (min-width: @desctop-width) {
-    flex: 0 0 184px;
     margin: 0;
+
+    &:nth-child(4n) {
+      width: 184px;
+    }
+
+    &:nth-child(2) {
+      width: 172px;
+    }
+
+    &:nth-child(1) {
+      width: 172px;
+    }
+
+    &--margin {
+      width: 153px;
+      margin-left: -13px;
+    }
   }
 
   &::before {
@@ -62,6 +79,7 @@
     background-color: #f2f2f2;
     vertical-align: middle;
     margin-right: 16px;
+    flex-shrink: 0;
   }
 
   &:hover {
@@ -111,6 +129,13 @@
 .attractions__input:checked + .attractions__label::before {
   content: "";
   background-image: url("/img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.attractions__input:active + .attractions__label::before {
+  content: "";
+  background-image: url("/img/icon-tick-active.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

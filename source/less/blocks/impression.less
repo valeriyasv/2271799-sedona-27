@@ -13,12 +13,12 @@
   @media (min-width: @desctop-width) {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     max-width: 960px;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 0;
     padding: 17px 53px;
-    gap: 28px;
+    gap: 56px;
   }
 }
 
@@ -37,8 +37,17 @@
   gap: 16px;
 
   @media (min-width: @tablet-width) {
-    flex: 0 0 280px;
+    width: 280px;
     margin: 0;
+  }
+
+  @media (min-width: @desctop-width) {
+    width: 250px;
+    margin: 0;
+
+    &:nth-child(3n) {
+      width: 238px;
+    }
   }
 
   &::before {
@@ -49,6 +58,7 @@
     border-radius: 50%;
     background-color: #f2f2f2;
     vertical-align: middle;
+    flex-shrink: 0;
   }
 
   &:hover {
@@ -91,6 +101,13 @@
 .impression__input:checked + .impression__label::before {
   content: "";
   background-image: url("/img/icon-shape.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.impression__input:active + .impression__label::before {
+  content: "";
+  background-image: url("/img/icon-shape-active.svg");
   background-repeat: no-repeat;
   background-position: center;
 }

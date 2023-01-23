@@ -1,0 +1,24 @@
+.button {
+  background-color: @main-color;
+  color: #ffffff;
+  font-weight: bold;
+  height: 58px;
+  border: none;
+
+  &:hover {
+    background-color: @hover-button-color;
+    cursor: pointer;
+  }
+
+  &:active {
+    background-color: @active-button-color;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.button:active .button__text {
+  opacity: 0.3;
+}

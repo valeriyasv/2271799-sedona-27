@@ -2,10 +2,15 @@
   resize: none;
   width: 279px;
   height: 150px;
-  padding: 16px;
-  border: none;
+  padding: 12px;
+  border: 4px solid #f2f2f2;
   background-color: #f2f2f2;
   box-sizing: border-box;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: inherit;
+  outline: none;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -23,6 +28,21 @@
     font-family: "PT Sans", sans-serif;
     color: #000000;
     opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: transparent;
+    border-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: transparent;
+    border-color: #e5e5e5;
   }
 }
 

@@ -1,0 +1,41 @@
+.transfer {
+  &--mobile {
+    display: block;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) and (max-width: 1199px) {
+      display: block;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desctop-width) {
+      display: block;
+    }
+  }
+
+  &--mobile-desk {
+    display: block;
+
+    @media (min-width: 767px) and (max-width: 1199px) {
+      display: none;
+    }
+  }
+
+  &--tab-desk {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+}

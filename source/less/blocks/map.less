@@ -63,3 +63,19 @@
 .map__search {
   text-align: center;
 }
+
+.map__image {
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/map-tablet.png");
+  }
+
+  @media (min-width: @desctop-width) {
+    background-image: url("../img/map-desktop.png");
+  }
+}

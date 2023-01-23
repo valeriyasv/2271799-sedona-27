@@ -87,20 +87,21 @@
               <div class="hr"></div>
               <fieldset class="fieldset feedback__contact-info contact-info">
                 <legend class="feedback__title feedback__title--contact">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-                <label class="feedback__label">
+                <label for="phone" class="feedback__label">
                   <span class="visually-hidden">ВВЕДИТЕ ТЕЛЕФОН</span>
                   КОНТАКТНЫЙ ТЕЛЕФОН*:<br>
-                  <div class="input__phone">
-                    <input class="input input--light" type="tel" placeholder="Введите телефон">
-                  </div>
                 </label>
-                <label class="feedback__label">
+                <div class="feedback__wrapper-phone">
+                  <input id="phone" class="input input--light" type="tel" placeholder="Введите телефон">
+                </div>
+                <label for="mail" class="feedback__label" >
                   <span class="visually-hidden">ВВЕДИТЕ АДРЕС ЭЛЕКТРОННОЙ ПОЧТЫ</span>
                   ЭЛЕКТРОННАЯ ПОЧТА*:<br>
-                  <div class="input__email">
-                    <input class="input input--light input--last" type="email" placeholder="Введите e-mail">
-                  </div>
                 </label>
+                <div class="feedback__wrapper-email">
+                  <input id="mail" class="input input--light input--last" type="email" placeholder="Введите e-mail">
+                </div>
+
               </fieldset>
             </div>
             <div class="hr"></div>
@@ -108,11 +109,11 @@
               <legend class="feedback__title feedback__title--hr">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
               <div class="impression__container">
                 <input class="impression__input" type="checkbox" id="positive" name="question" value="good" checked>
-                <label class="impression__label" for="positive">Скорее положительное</label>
+                <label tabindex="0" class="impression__label" for="positive">Скорее положительное</label>
                 <input class="impression__input" type="checkbox" name="question" value="bad" id="negative">
-                <label class="impression__label" for="negative">Скорее отрицательное</label>
+                <label tabindex="0" class="impression__label" for="negative">Скорее отрицательное</label>
                 <input class="impression__input" type="checkbox" name="question" value="unknow" id="unanswered">
-                <label class="impression__label" for="unanswered">Затрудняюсь ответить</label>
+                <label tabindex="0" class="impression__label" for="unanswered">Затрудняюсь ответить</label>
               </div>
             </fieldset>
             <div class="hr"></div>
@@ -120,13 +121,13 @@
               <legend class="feedback__title feedback__title--hr">ПОСЕЩЕННЫЕ<br> ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
               <div class="attractions__wrapper">
                 <input class="attractions__input" type="checkbox" name="ask" value="devil" id="bridge" checked>
-                <label class="attractions__label" for="bridge">Мост Дьявола</label>
+                <label tabindex="0" class="attractions__label" for="bridge">Мост Дьявола</label>
                 <input class="attractions__input" type="checkbox" name="ask" value="bell" id="mountain" checked>
-                <label class="attractions__label" for="mountain">Гора-Колокол</label>
+                <label tabindex="0" class="attractions__label" for="mountain">Гора-Колокол</label>
                 <input class="attractions__input" type="checkbox" name="ask" value="slide" checked id="park">
-                <label class="attractions__label" for="park">Слайд-парк</label>
+                <label tabindex="0" class="attractions__label attractions__label--margin" for="park">Слайд-парк</label>
                 <input class="attractions__input" type="checkbox" id="rock">
-                <label class="attractions__label" for="rock">Красные скалы</label>
+                <label tabindex="0" class="attractions__label" for="rock">Красные скалы</label>
               </div>
             </fieldset>
             <div class="hr"></div>
@@ -137,7 +138,7 @@
               </label>
             </fieldset>
             <div class="feedback__button button-mark">
-                <button class="button-mark__button button">ОТПРАВИТЬ ОТЗЫВ</button>
+                <button class="button-mark__button button"><span class="button__text">ОТПРАВИТЬ ОТЗЫВ</span></button>
                 <p class="button-mark__addition">* — ОБЯЗАТЕЛЬНЫЕ ПОЛЯ</p>
             </div>
 
@@ -181,7 +182,7 @@
             <li class="social__item">
               <a class="social__button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">ПЕРЕЙТИ В СОЦ СЕТЬ ВКОНТАКТЕ СЕДОНЫ</span>
-                <svg class="social__button--icon" width="24" height="14">
+                <svg class="social__icon" width="24" height="14">
                   <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
@@ -189,7 +190,7 @@
             <li class="social__item">
               <a class="social__button" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">ПЕРЕЙТИ В ТЕЛЕГРАМ СЕДОНЫ</span>
-                <svg class="social__button--icon" width="21" height="18">
+                <svg class="social__icon" width="21" height="18">
                   <use xlink:href="img/sprite.svg#icon-telegram"></use>
                 </svg>
               </a>
@@ -197,7 +198,7 @@
             <li class="social__item">
               <a class="social__button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">ПЕРЕЙТИ В ЮТУБ СЕДОНЫ</span>
-                <svg class="social__button--icon" width="20" height="14">
+                <svg class="social__icon" width="20" height="14">
                   <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a>

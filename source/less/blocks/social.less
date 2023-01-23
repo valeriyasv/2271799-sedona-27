@@ -14,6 +14,7 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     margin-right: 9px;
+    margin-left: 0;
   }
 
   @media (min-width: @desctop-width) {
@@ -23,7 +24,7 @@
 
   &--index {
     @media (min-width: @tablet-width) {
-      margin-left: 17px;
+      margin-left: 10;
     }
 
     @media (min-width: @desctop-width) {
@@ -41,10 +42,6 @@
   justify-content: center;
   border: none;
 
-  &--icon {
-    color: #ffffff;
-  }
-
   &:hover {
     background-color: @hover-button-color;
     color: fade(#ffffff, 0.3);
@@ -53,4 +50,12 @@
   &:active {
     background-color: @active-button-color;
   }
+}
+
+.social__icon {
+  color: #ffffff;
+}
+
+.social__button:active .social__icon {
+  opacity: 0.3;
 }

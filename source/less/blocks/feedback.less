@@ -277,3 +277,39 @@
   }
 }
 
+.feedback__wrapper-phone {
+  position: relative;
+
+  &::before {
+    content: url("/img/icon-phone.svg");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    z-index: 7;
+    background-color: #e6e6e6;
+    background-position: center;
+  }
+}
+
+.feedback__wrapper-email {
+  position: relative;
+
+  &::after {
+    content: url("/img/icon-email.svg");
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    width: 58px;
+    height: 58px;
+    background-color: #e6e6e6;
+    background-position: center;
+  }
+}
