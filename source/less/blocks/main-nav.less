@@ -136,12 +136,11 @@
 .main-nav--nojs .main-nav__list {
   display: flex;
   flex-direction: column;
+  position: static;
+  min-height: 0;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
   }
 }
 
-.main-nav--nojs {
-  position: static;
-}
