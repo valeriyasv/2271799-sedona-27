@@ -24,10 +24,10 @@ The project includes markup, styles, and graphics optimized for responsive devic
 |   |   |-- blocks/
 |   |   |-- global/
 |   |
-|   |-- index.html
+|   |-- index.html<br>
 |   |
-|   |-- catalog.html
-|   |
+|   |-- catalog.html<br>
+|   | 
 |   |-- form.html
 |   |
 |-- gulpfile.js
