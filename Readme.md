@@ -8,11 +8,11 @@ The project includes markup, styles, and graphics optimized for responsive devic
 **Project Structure**
 
 2271799-sedona-27/
-|-- src/
-|   |-- css/
-|   |   |-- block1/
+|-- src/<br>
+|   |-- css/<br>
+|   |   |-- block1/<br>
 |   |
-|   |-- fonts/
+|   |-- fonts/<br>
 |   | 
 |   |
 |   |-- img/
