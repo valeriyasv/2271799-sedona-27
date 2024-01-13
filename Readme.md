@@ -7,30 +7,30 @@ The project includes markup, styles, and graphics optimized for responsive devic
 
 **Project Structure**
 
-2271799-sedona-27/
+2271799-sedona-27/<br>
 |-- src/<br>
 |   |-- css/<br>
 |   |   |-- block1/<br>
-|   |
+|   |<br>
 |   |-- fonts/<br>
-|   | 
-|   |
-|   |-- img/
-|   |
-|   |-- js/
-|   |   |-- script.js
-|   |
-|   |-- less/
-|   |   |-- blocks/
-|   |   |-- global/
-|   |
+|   | <br>
+|   |<br>
+|   |-- img/<br>
+|   |<br>
+|   |-- js/<br>
+|   |   |-- script.js<br>
+|   |<br>
+|   |-- less/<br>
+|   |   |-- blocks/<br>
+|   |   |-- global/<br>
+|   |<br>
 |   |-- index.html<br>
-|   |
+|   |<br>
 |   |-- catalog.html<br>
-|   | 
-|   |-- form.html
-|   |
-|-- gulpfile.js
-|-- package.json
-|-- README.md
+|   |<br>
+|   |-- form.html<br>
+|   |<br>
+|-- gulpfile.js<br>
+|-- package.json<br>
+|-- README.md<br>
 
